@@ -1,10 +1,18 @@
 import Todo from './Todo'
+import Registration from './Registration'
+import React from 'react';
+import Login from './Login'
 
 
-function App() {
+class App extends React.Component {
+  render(){
   return (
-    <Todo></Todo>
-  )
+    <>
+      <Registration></Registration>
+      <Login></Login>
+      <Todo></Todo>
+    </> 
+  )}
 }
 
 export default App;

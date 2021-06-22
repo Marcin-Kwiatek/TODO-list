@@ -12,11 +12,28 @@ code {
 .task {
     padding: 10px;
     border: 1px solid #cdcdcd;
-    margin: 10px;
+    margin: 20px;
 }
 
 .toDoTitle {
     font-size: 30px;
     font-weight: bold;
+    margin: 20px;
+}
+
+.container {
+    width: 30%;
+    margin: 40px;
+    border: 1px solid #cdcdcd;
+    float: left;
+}
+
+.inputToLogin {
+    width: 70%;
+    margin: 10px;
+}
+
+.confirmationButton {
+    float: right;
     margin: 10px;
 }

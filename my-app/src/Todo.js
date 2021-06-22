@@ -13,10 +13,12 @@ class Todo extends React.Component {
             return <div className='task' key={e.id}>{e.title}</div>
         })
         return(
-            <div>
+            <>
+                <div style={{clear:'both'}}>
                 <div className="toDoTitle">Zadania do wykonania</div>
                 {elements}
-            </div>
+                </div>
+            </>
         )
     }
 }
