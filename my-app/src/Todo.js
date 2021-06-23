@@ -3,14 +3,18 @@ import React from 'react'
 class Todo extends React.Component {
     state = {
         elements: [
-            {id:'23424', title:'Zrobić zakupy'},
-            {id:'23334', title:'Zrobić pranie'},
-            {id:'23234', title:'Zmyć naczynia'},
+            {title:'Zrobić zakupy'},
+            {title:'Zrobić pranie'},
+            {title:'Zmyć naczynia'},
+            {title:'Odkurzyć'},
+            {title:'Pójść do pracy'},
+            {title:'Naprawić samochód'},
+
         ]
     }
     render() {
         const elements = this.state.elements.map(e =>{
-            return <div className='task' key={e.id}>{e.title}</div>
+            return <div className='task'>{e.title}</div>
         })
         return(
             <>

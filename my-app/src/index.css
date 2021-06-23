@@ -20,20 +20,3 @@ code {
     font-weight: bold;
     margin: 20px;
 }
-
-.container {
-    width: 30%;
-    margin: 40px;
-    border: 1px solid #cdcdcd;
-    float: left;
-}
-
-.inputToLogin {
-    width: 70%;
-    margin: 10px;
-}
-
-.confirmationButton {
-    float: right;
-    margin: 10px;
-}
