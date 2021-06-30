@@ -16,7 +16,8 @@ class Todo extends React.Component {
     }
     render() {
         const elements = this.state.elements.map(e =>{
-            return <TodoItem title={e.title} removeTask={this.removeTask.bind(this)}></TodoItem>
+            return <TodoItem title={e.title} removeTask={this.removeTask.bind(this)}
+             editTask={this.editTask.bind(this)}></TodoItem>
         })
         return(
             <>
@@ -65,6 +66,12 @@ class Todo extends React.Component {
             })
             this.setState({elements: sortedElements})
             this.setState({sortButton: "Sortuj od A do Z"})}
+    }
+    editTask(title, editInputValue){
+        let editElements = this.state.elements.filter((element)=>element.title !== title)
+        let titles = this.state.elements.map((item)=> item.title)
+        editElements.splice(titles.indexOf(title),0,{title:editInputValue})
+        this.setState({elements:editElements})
     }
 }
 
